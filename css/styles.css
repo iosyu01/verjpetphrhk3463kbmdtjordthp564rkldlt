@@ -1,20 +1,20 @@
 
 @font-face {
     font-family: 'JudFont';
-    src: url("JudFont-7674c74c4d7d2ad0dc602174ca0c3cc9648f7584.eot");
-    src: local('☺'), url("JudFont-ff0736fe528c1ed5d66450589488779ee0915ac5.woff") format('woff'), url("JudFont-3d329f2f7535fefc690a67a5770e759843d588dc.ttf") format('truetype'), url("JudFont-93273ca102fc246061cbacb1e4cc36e5f296486a.svg") format('svg');
+    src: url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/JudFont-7674c74c4d7d2ad0dc602174ca0c3cc9648f7584.eot");
+    src: local('☺'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/JudFont-ff0736fe528c1ed5d66450589488779ee0915ac5.woff") format('woff'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/JudFont-3d329f2f7535fefc690a67a5770e759843d588dc.ttf") format('truetype'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/JudFont-93273ca102fc246061cbacb1e4cc36e5f296486a.svg") format('svg');
 }
 
 @font-face {
     font-family: 'IranYekanR';
-    src: url("iranyekanwebregular-081bff36e4d92f865193f27a03575de5b34ef68b.eot");
-    src: local('☺'), url("iranyekanwebregular-003317c4704f8a6aa3b0ca9a9cc61d5fb4403223.woff") format('woff'), url("iranyekanwebregular-59fde2dfefe97d8ccce5d9843e95c24078825ede.ttf") format("truetype"), url("iranyekanwebregular-fdd0d245b70c261ec277f917e9c2c2bb2d7feeb4.svg") format("svg");
+    src: url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebregular-081bff36e4d92f865193f27a03575de5b34ef68b.eot");
+    src: local('☺'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebregular-003317c4704f8a6aa3b0ca9a9cc61d5fb4403223.woff") format('woff'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebregular-59fde2dfefe97d8ccce5d9843e95c24078825ede.ttf") format("truetype"), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebregular-fdd0d245b70c261ec277f917e9c2c2bb2d7feeb4.svg") format("svg");
 }
 
 @font-face {
     font-family: 'IranYekanB';
-    src: url("iranyekanwebbold-27d7251060621a2cbdba20f6ca2ed60a2c49e49d.eot");
-    src: local('☺'), url("iranyekanwebbold-e587713a2dc5102ec7444ab2d10859e6974e3a82.woff") format('woff'), url("iranyekanwebbold-6712153304a16c8da0a8e672007ef8d5a61c71cf.ttf") format("truetype"), url("iranyekanwebbold-3f3796c74dcf82ef44b3b5625828411acdc0ecdd.svg") format("svg");
+    src: url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebbold-27d7251060621a2cbdba20f6ca2ed60a2c49e49d.eot");
+    src: local('☺'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebbold-e587713a2dc5102ec7444ab2d10859e6974e3a82.woff") format('woff'), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebbold-6712153304a16c8da0a8e672007ef8d5a61c71cf.ttf") format("truetype"), url("https://raw.githubusercontent.com/iosyu01/verjpetphrhk3463kbmdtjordthp564rkldlt/main/css/iranyekanwebbold-3f3796c74dcf82ef44b3b5625828411acdc0ecdd.svg") format("svg");
 }
 
 body {
